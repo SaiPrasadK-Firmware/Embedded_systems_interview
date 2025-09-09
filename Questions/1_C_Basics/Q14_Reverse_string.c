@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+#include<string.h>
+void str_rev(char *str)
+{
+    int start =0,end=strlen(str)-1;
+    while(start<end)
+    {
+        char temp = str[start];
+        str[start++] = str[end];
+        str[end--] = temp;
+    }
+    
+}
+int main()
+{
+char str[20] = "hello World";
+str_rev(str);
+printf("%s",str);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
